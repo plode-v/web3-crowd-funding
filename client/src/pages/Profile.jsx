@@ -1,8 +1,12 @@
 import React from 'react'
 
+import { useAddress } from "@thirdweb-dev/react"
+
 const Profile = () => {
+
+    const address = useAddress();
     return (
-        <div>Profile</div>
+        <div>{address}</div>
     )
 }
 
